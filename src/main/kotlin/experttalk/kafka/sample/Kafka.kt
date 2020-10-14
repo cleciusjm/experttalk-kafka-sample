@@ -29,7 +29,7 @@ class Kafka(
         KafkaConsumer<String, String>(Properties().also {
             it[ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG] = server
             it[ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG] = "true"
-            it[ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG] = "1000"
+            it[ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG] = "100"
             it[ConsumerConfig.GROUP_ID_CONFIG] = clientId
             it[ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG] = STR_DESERIALIZER
             it[ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG] = STR_DESERIALIZER
