@@ -24,6 +24,7 @@ dependencies {
 
     implementation("org.apache.kafka:kafka-clients:2.6.0")
     implementation("com.fasterxml.jackson.core:jackson-databind")
+    implementation("ch.qos.logback:logback-classic:1.3.0-alpha4")
 
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 
@@ -31,5 +32,5 @@ dependencies {
 }
 
 application {
-    mainClassName = "experttalk.kafka.sample.MainKt"
+    mainClassName = "experttalk.kafka.sample.MainInputProducerKt"
 }
